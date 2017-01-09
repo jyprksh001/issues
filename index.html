@@ -8,11 +8,12 @@
 <body ng-controller="githubController">
 	<input name="repoInput" ng-model="repo"></input>
 	<button type="button" ng-click="getIssues(repo)">Click Me!</button>
+
 	<div class="user-data" ng-if="visible==0">
 		<div>
-			<div class="user-name">{{}}</div>
+			<div class="user-name">{{user.login}}</div>
 			<div class="user-userImage">
-				<img ng-src=""/>
+				<img ng-src={{user.avatar_url}}/>
 			</div>
 			<div class="user-issue-closed">{{data.length}}</div>
 			<div ng-repeat="issues in data">
@@ -23,7 +24,6 @@
 
 	<div ng-if="visible==1">
 		<div>No user or data not available</div>
-		<div>{{errordata}}</div>
 	</div>
 	<!-- username/repo>
 	<userAvatarImage><total Number Of Issue Closed><list all the user whose issue is closed(<total number of follower of a user>)>
