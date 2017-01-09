@@ -1,0 +1,17 @@
+{
+  "name": "git-issues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "github": "^7.3.1"
+  }
+}
